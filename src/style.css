@@ -1,0 +1,84 @@
+div {
+  border-collapse: collapse;
+  width: 40%;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 20%;
+  bottom: auto;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h2 {
+  margin: 0;
+  padding: 8px;
+  font-size: 20px;
+  border-bottom: 2px solid #ddd;
+  font-weight: 100;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 95%;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+label,
+span {
+  padding: 10px;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dim {
+  font-size: 15px;
+}
+
+li {
+  border-bottom: 2px solid #ddd;
+}
+
+.last-button {
+  background-color: #ddd;
+  text-align: center;
+  padding: 12px;
+}
+
+.sombre {
+  color: #ccc;
+}
+
+.padding {
+  margin-right: 10px;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-around > input[type="checkbox"] {
+  width: auto;
+}
+
+.padding-left {
+  margin-left: 10px;
+}
