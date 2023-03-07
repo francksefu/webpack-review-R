@@ -1,3 +1,5 @@
+import { forEach } from "lodash";
+
 const arr = [];
 
 const inputAdd = document.querySelector('#writable');
@@ -64,9 +66,7 @@ const add = () => {
   deleteButton.addEventListener('click', () => {
     lilast.remove();
     arr.splice(arr.indexOf(obj), 1);
-    for (let y = 0; y < arr.length; y += 1) {
-      arr[y].index = y;
-    }
+    arr.forEach((current, indexI) => current.index = indexI);
     localStorage.setItem('toDoList', JSON.stringify(arr));
   });
   articleRemove.addEventListener('keypress', (e) => {
@@ -79,9 +79,7 @@ const add = () => {
             <span><input type="checkbox" class="padding checky" name="" id="${arr.length - 1}"><label for="${arr.length - 1}">${updateValue}
             </label><span>`;
       article.appendChild(span);
-      for (let y = 0; y < arr.length; y += 1) {
-        arr[y].index = y;
-      }
+      arr.forEach((current, indexI) => current.index = indexI);
       localStorage.setItem('toDoList', JSON.stringify(arr));
     }
   });
